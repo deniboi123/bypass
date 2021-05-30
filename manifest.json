@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "bypass",
+  "description": "Bypassing Block-Ad-Blockers easily.",
+  "version": "0.1",
+  
+   "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+
+	"content_scripts": [
+	  {
+		"matches": [
+		  "<all_urls>"
+		],
+		"js": ["content.js"]
+	  }
+	]
+}
